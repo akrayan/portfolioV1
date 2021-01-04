@@ -170,7 +170,7 @@ function Projects(props) {
 					console.log("cre at", element.created_at);
 					element.created_at = new Date(element.created_at);
 					element.date = element.created_at;
-					element.description = element.description.length > MaxLength ? element.description.substring(0, MaxLength) + "..." : element.description;
+					element.description = element.description?.length > MaxLength ? element.description.substring(0, MaxLength) + "..." : element.description;
 				});
 				response.data = response.data.sort((a, b) => a.created_at - b.created_at);
 				console.log("edited", response.data);
