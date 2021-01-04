@@ -1,0 +1,19 @@
+/* CSS HEX */
+:root {
+--gunmetal: #0D262Eff;
+--msu-green: #154740ff;
+--bottle-green: #1E6852ff;
+--spanish-viridian: #278A64ff;
+--green-crayola: #2FAB75ff;
+--emerald: #38CC87ff;
+--medium-spring-green: #40ED99ff;
+
+/* CSS HSL */
+--gunmetal: hsla(195, 56%, 12%, 1);
+--msu-green: hsla(172, 54%, 18%, 1);
+--bottle-green: hsla(162, 55%, 26%, 1);
+--spanish-viridian: hsla(157, 56%, 35%, 1);
+--green-crayola: hsla(154, 57%, 43%, 1);
+--emerald: hsla(152, 59%, 51%, 1);
+--medium-spring-green: hsla(151, 83%, 59%, 1);
+}

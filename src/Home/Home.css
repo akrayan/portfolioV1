@@ -1,16 +1,127 @@
-.Home-Container1 {
-    background-color: var(--space-cadet);
-    height: 1000px;
-    color: var(--emerald);
-    justify-content: center;
-    align-content: center;
-    font-size: larger;
-    display: grid;
+
+.MuiPaper-background-1{
+    background-color: var(--gunmetal);
 }
 
-h1 {
-    height: 100px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: normal;
+.MuiPaper-background-1-1{
+    background-color: var(--msu-green);
+}
+
+.MuiPaper-background-1-2{
+    background-color: var(--bottle-green);
+}
+
+.MuiPaper-root background-1-3{
+    background-color: var(--spanish-viridian);
+}
+
+.MuiPaper-root background-2-1{
+    background-color: var(--midnight-green-eagle-green);
+}
+
+.MuiPaper-background-2-2{
+    background-color: var(--skobeloff);
+}
+
+.MuiPaper-root background-2-3{
+    background-color: var(--dark-cyan);
+}
+
+.background-1{
+    background-color: var(--gunmetal);
+}
+
+.background-1-1{
+    background-color: var(--msu-green);
+}
+
+.background-1-2{
+    background-color: var(--bottle-green);
+}
+
+.background-1-3{
+    background-color: var(--spanish-viridian);
+}
+
+.background-2-1{
+    background-color: var(--midnight-green-eagle-green);
+}
+
+.background-2-2{
+    background-color: var(--skobeloff);
+}
+
+.background-2-3{
+    background-color: var(--dark-cyan);
+}
+
+.grand-title {
+    color: var(--green-crayola);
+}
+
+.title {
+    color: var(--medium-spring-green);
+}
+
+.sub-title {
+    color: var(--fluorescent-blue);
+}
+
+
+.text-secondary {
+    color: var(--medium-turquoise);
+}
+
+.text-primary {
+    color: var(--emerald);
+}
+
+.padding-xl {
+    padding: 50px;
+}
+
+.padding-l {
+    padding: 20px;
+}
+
+.padding-m {
+    padding: 10px;
+}
+
+.Card1 {
+    position: relative;
+    left: 50px;
+    height: 340px;
+    width: 340px;
+
+}
+
+.Card2 {
+    padding-left: 60px;
+    height: 600px;
+    width: 800px;
+}
+
+.Home-Container1 {
+    display: grid;
+    background-color: var(--space-cadet);
+    color: var(--emerald);
+    padding: 10%;
+    align-content: center;
+    font-size: larger;
+    height: 1000px;
+}
+
+.Project-Grid {
+    width: 70%;
+    display: grid;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Photo {
+    position: relative;
+    right: 50px;
 }
 

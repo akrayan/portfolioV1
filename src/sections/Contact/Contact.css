@@ -1,0 +1,16 @@
+.Contact-Container1 {
+    display: grid;
+    background-color: var(--space-cadet);
+    color: var(--emerald);
+    justify-content: center;
+    align-content: center;
+    font-size: larger;
+    height: 1000px;
+    width: 100%;
+}
+
+.Photo {
+    position: relative;
+    right: 50px;
+}
+

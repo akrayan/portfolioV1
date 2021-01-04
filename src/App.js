@@ -1,20 +1,17 @@
 import React from "react";
 import gear from "./gear.svg";
 import "./App.css";
-import "./palette.css";
+
 import Home from "./Home";
+import { CssBaseline } from "@material-ui/core";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          <code>In development ...</code>
-        </p>
-        <img src={gear} className="App-logo" alt="gear" />
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<CssBaseline />
+			<Home />
+		</>
+	);
 }
 
 export default App;

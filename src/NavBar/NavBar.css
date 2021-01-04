@@ -1,0 +1,23 @@
+.NavBar-Container1 {
+    display: grid;
+    background-color: var(--space-cadet);
+    color: var(--emerald);
+    padding: 10%;
+    align-content: center;
+    font-size: larger;
+    height: 1000px;
+}
+
+.Project-Grid {
+    width: 70%;
+    display: grid;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Photo {
+    position: relative;
+    right: 50px;
+}
+

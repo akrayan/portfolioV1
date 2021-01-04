@@ -1,0 +1,13 @@
+.TopPage-Container1 {
+    display: grid;
+    background-color: var(--space-cadet);
+    color: var(--emerald);
+    font-size: larger;
+    padding: 50px;
+}
+
+.Photo {
+    position: relative;
+    right: 50px;
+}
+

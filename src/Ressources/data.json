@@ -1,0 +1,79 @@
+{
+    "mailLink": "mailto:raihane.akkache@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/raihane-akkache/",
+    "shortResume": "Serious, passionate and creative, I will be graduated in October 2020 with a Master in Computer Science from EPITECH - Paris Graduate School of Digital Innovation and I'm looking for a full-time job as software engineer.",
+    "aboutMe": [
+        "Hello ! I'm Raihane, a software engineer,",
+        "I start learning programming to create games, to build new worlds to explore, and to create new fun and original and gameplays. But I discovered a new passion for programming, I like the way to resolve problems with logic and algorithms, for me it's like a never-ending puzzle. Also it is a constantly changing and innovative field and I like to think about all the things that we can develop in the future.",
+        "This leads me to EPITECH - Paris Graduate School of Digital Innovation, where I had the opportunity through many projects to hone my skills in C++, C# and prototyping projects, it also gives me strong team working and communication skills and the ability to work with people from different professions. I also studied for one year at Ahlia University, Manama, Bahrain as an exchange student. I will graduate in October with a master's in computer science and I am looking for a full-time job as Software Engineer."
+    ],
+    "jobTitle": "Software Engineer",
+    "skills": [
+        "C",
+        "C++",
+        "C#",
+        "Unity3D",
+        "JavaScript",
+        "React"
+    ],
+    "experience": [
+        {
+            "title": "Salesforce Developer",
+            "company": "Isochronix",
+            "date": "March 2020 - September 2020",
+            "details": [
+                "Successfully Wrote backend classes to manage database through salesforces environment in Apex / Java language.",
+                "Created Front web pages in HTML / CSS / JavaScript for Salesforce Organization.",
+                "Implemented Integration and Unit test on large back-end application"
+            ]
+        },
+        {
+            "title": "Project Manager and React Native Developer",
+            "company": "Bonami",
+            "date": "May 2018 - August 2018",
+            "details": [
+                "Successfully Implemented a mobile application on Ios and Android using React JS from the beginning until the first beta version, including a local database and communication with a REST API.",
+                "Managed the front-side project by planning the task for all the differents sprints (agile / scrum)."
+            ]
+        },
+        {
+            "title": "Unity3D Developer",
+            "company": "3drudder",
+            "date": "August 2016 – November 2016",
+            "details": [
+                "Improved their VR demo on HTC Vive and Oculus Rift by implementing new features and levels using C# and Unity3D, like an in-game tutorial level to simplified the explanation during the demonstration of their product.",
+                "Design and implemented a short arcade game with the 3drudder and HTC Vive.",
+                "Established different quality test by testing many games with their device and write documentation about the utility of their controller in game"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Cyber Rider",
+            "downloadable": true,
+            "image": "CyberRider2.png",
+            "backgroundColor": "#462B3B",
+            "link" : "https://drive.google.com/u/0/uc?export=download&confirm=FL9G&id=1MbWefGwL6tiDEtOFIxJtxldSHr98LQRN",
+            "description" : "A futirist 2d game that I have done with a team online to train myself on Unity3D during the lockdown.\n\nThe player runs from the police after committing a crime in a chaotic cyberpunk city, his goal is to get as far away from the police as possible in such a huge city. The player must escape through the nooks and crannies of the city and dodge all kinds of obstacles"
+        },
+        {
+            "title": "Mini Jam 56 - The last hole cutter",
+            "downloadable": false,
+            "image": "tlhc.png",
+            "backgroundColor": "#407589",
+            "link" : "https://misterm.itch.io/the-last-hole-cutter",
+            "description" : "A multiplayer game made in 48 hours for the Mini Jam 56\n\nYears ago, the donut and bagel lands lived together in harmony. but everything changed when the holy dough cutter disappeared"
+        },
+        {
+            "title": "Ludum Dare 47 - Fröggo",
+            "downloadable": false,
+            "image": "Froggo.png",
+            "backgroundColor": "#D9D9D9",
+            "link" : "https://stampeder525.itch.io/frggo",
+            "description" : "A small game made in 72 hours during the Ludum Dare 47,\n\nHelp little Fröggo reach his friends on the other side of the river.\nTry not to suffer any unforseen consequences !"
+        }
+    ]
+
+}
+
+
