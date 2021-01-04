@@ -1,5 +1,4 @@
 import React from "react";
-import gear from "./gear.svg";
 import "./App.css";
 
 import Home from "./Home";

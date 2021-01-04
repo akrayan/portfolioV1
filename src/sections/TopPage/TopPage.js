@@ -1,8 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import { makeStyles, Grid, Tabs, Tab, Box, Typography, Button } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Button } from "@material-ui/core";
 import "./TopPage.css";
 import data from "Ressources/data.json";
 import Background from "Ressources/Images/background.jpg";

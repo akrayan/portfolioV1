@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import { makeStyles, withStyles, Grid, Tabs, Tab, Box, Typography, List, ListItem, ListItemText, ListItemIcon } from "@material-ui/core";
-import { FiberManualRecord, SettingsEthernet } from "@material-ui/icons";
+import { makeStyles, withStyles, Grid, Tabs, Tab, Box, Typography } from "@material-ui/core";
 import "./Experience.css";
 import data from "Ressources/data.json";
 import withWidth from "@material-ui/core/withWidth";
@@ -63,7 +60,7 @@ function TabPanel(props) {
 		<div role="tabpanel" hidden={value !== index} id={`vertical-tabpanel-${index}`} aria-labelledby={`vertical-tab-${index}`} {...other}>
 			{value === index && (
 				<Box p={3}>
-					<Typography>{children}</Typography>
+					{children}
 				</Box>
 			)}
 		</div>
@@ -88,7 +85,7 @@ function PanelsList(props) {
 	const classes = useStyles();
 
 	return data.experience.map((v, i) => (
-		<TabPanel className={classes.panel} value={value} index={i}>
+		<TabPanel key={"exp " + i} className={classes.panel} value={value} index={i}>
 			<Typography variant="h4" gutterBottom>
 				{v.title + " at " + v.company}
 			</Typography>
@@ -96,8 +93,8 @@ function PanelsList(props) {
 				{v.date}
 			</Typography>
 			<ul className={classes.list}>
-				{v.details.map((item) => (
-					<li className={classes.item}>
+				{v.details.map((item, j) => (
+					<li key={"exp " + i + ", li " + j} className={classes.item}>
 						<Typography variant="body1" gutterBottom>{item}</Typography>
 					</li>
 				))}
@@ -125,9 +122,9 @@ function Experience(props) {
 					<div className={classes.card}>
 						<Grid container direction={width == "xs" ? "column" : "row"} justify="center" alignItems="stretch">
 							<Grid item xs={12} sm={3} style={{ display: "grid", alignItems: "center" }} className={classes.tabs}>
-								<Tabs orientation={width == "xs" ? "horizontal" : "vertical"} centered variant="scrollable" value={value} onChange={handleChange} aria-label="Exp tabs">
+								<Tabs orientation={width == "xs" ? "horizontal" : "vertical"} variant="scrollable" value={value} onChange={handleChange} aria-label="Exp tabs">
 									{data.experience.map((v, i) => (
-										<StyleTab className={classes.navb} label={v.company} {...a11yProps(i)} />
+										<StyleTab key={"tab exp " + i} className={classes.navb} label={v.company} {...a11yProps(i)} />
 									))}
 								</Tabs>
 							</Grid>

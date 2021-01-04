@@ -1,14 +1,12 @@
-import React, { useRef, useState } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import CardContent from "@material-ui/core/CardContent";
-import { makeStyles, Grid, Tabs, Tab, Box, Typography, Card, CardMedia, Fade } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Card, CardMedia } from "@material-ui/core";
 import "./About.css";
 import data from "Ressources/data.json";
 import profil from "Ressources/Images/profil.jpg";
 //import {} from "devicon"
 
-
-const styles = makeStyles(theme => ({
+const styles = makeStyles((theme) => ({
 	section: theme.section,
 	root: {
 		paddingTop: "150px",
@@ -33,10 +31,11 @@ const styles = makeStyles(theme => ({
 		width: "200px",
 		columns: 2,
 		listStyle: "-  ",
+		color: "#37CBC7ff",
 	},
 	skillsColor: {
-		color: "#37CBC7ff"
-	}
+		color: "#37CBC7ff",
+	},
 }));
 
 /*
@@ -55,7 +54,7 @@ function About(props) {
 			<Typography variant="h3" gutterBottom>
 				About Me
 			</Typography>
-			
+
 			<Grid container direction="row" justify="center" alignItems="center">
 				<Card elevation={8} className={classes.profilCard}>
 					<CardMedia className={classes.media} image={profil} title="Me" />
@@ -66,24 +65,27 @@ function About(props) {
 						<Typography variant="h4" gutterBottom>
 							Who am I ?
 						</Typography>
-						{data.aboutMe.map((v) => (
-							<div>
+						{data.aboutMe.map((v, i) => (
+							<div key={"AM " + i}>
 								<Typography variant="body1" gutterBottom>
 									{v}
 								</Typography>
 								<br />
 							</div>
 						))}
-						<Typography variant="body2" className={classes.skillsColor}><div>Here are some technologies I often work with :</div></Typography>
-						<i class="devicon-javascript-plain"></i>
-						
-						<Typography variant="body2" className={classes.skillsColor} gutterBottom>
-							<ul className={classes.skills}>
-								{data.skills.map((v) => (
-									<li>{v}</li>
-								))}
-							</ul>
+						<Typography variant="body2" className={classes.skillsColor}>
+							Here are some technologies I often work with :
 						</Typography>
+
+						<ul className={classes.skills}>
+							{data.skills.map((v, i) => (
+								<li key={"skill " + i}>
+									<Typography variant="body2" className={classes.skillsColor} gutterBottom>
+										{v}
+									</Typography>
+								</li>
+							))}
+						</ul>
 					</CardContent>
 				</Card>
 			</Grid>

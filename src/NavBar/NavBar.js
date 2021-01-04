@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
-import { AppBar, Toolbar, Typography, CssBaseline, useScrollTrigger, Box, Container, Grid, Slide, Link, Button, IconButton, makeStyles } from "@material-ui/core";
+import { AppBar, Toolbar, Typography,  useScrollTrigger, Grid, Slide, Link, Button, IconButton, makeStyles } from "@material-ui/core";
 import "./NavBar.css";
-import data from "../Ressources/data.json";
 import resume from "../Ressources/Resume.pdf";
 
 const useStyles = makeStyles((theme) => ({
@@ -52,26 +51,26 @@ function NavBar(props) {
 						<Grid container direction="row" justify="space-between" alignItems="center">
 							<Grid item xs={1}>
 								<IconButton color="primary" href="/" aria-label="home">
-									<HomeRoundedIcon fontSize="medium" />
+									<HomeRoundedIcon  />
 								</IconButton>
 							</Grid>
 							<Grid container item xs={11} direction="row" justify="flex-end" alignItems="center">
-								<Typography variant="link">
+								<Typography >
 									<Link href="#About" className={classes.ml}>
 										{"01. About"}
 									</Link>
 								</Typography>
-								<Typography variant="link">
+								<Typography >
 									<Link href="#Experience" className={classes.ml}>
 										{"02. Experience"}
 									</Link>
 								</Typography>
-								<Typography variant="link">
+								<Typography >
 									<Link href="#Projects" className={classes.ml}>
 										{"03. Projects"}
 									</Link>
 								</Typography>
-								<Typography variant="link">
+								<Typography >
 									<Link href="#Contact" className={classes.ml}>
 										{"04. Contact"}
 									</Link>

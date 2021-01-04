@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import PropTypes from "prop-types";
 import {useIsVisible} from "./useIsVisible"
 import { Fade } from "@material-ui/core";
 

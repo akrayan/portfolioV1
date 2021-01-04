@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import { makeStyles, Grid, Tabs, Tab, Box, Button, Typography, Paper, Divider, Card, CardActionArea, CardActions, CardMedia, CardContent, Chip, IconButton, SvgIcon } from "@material-ui/core";
+import { makeStyles, Grid, Button, Typography, Card, CardActionArea, CardMedia, CardContent, Chip, IconButton, SvgIcon } from "@material-ui/core";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { ReactComponent as WinLogo } from "Ressources/icons/win.svg";
 import "./Projects.css";
 import data from "Ressources/data.json";
 import axios from "axios";
-import GetAppIcon from "@material-ui/icons/GetApp";
 
 const MaxLength = 150;
 
@@ -70,43 +68,44 @@ function WinIcon(props) {
 
 function RecentList(props) {
 	const classes = useStyles();
-	return props.list.map((v) => {
-		console.log("r list value", v)
+	return props.list.map((v, i) => {
+		console.log("r list value", v);
 		return (
-		<Grid item>
-			<Card elevation={5}>
-				<CardMedia className={classes.media} style={{ backgroundColor: v.backgroundColor }} image={require("Ressources/Images/" + v.image)} title="project" />
-				<CardContent>
-					<Typography style={{ textTransform: "capitalize", marginBottom: "20px" }} variant="subtitle1">
-						{v.title}
-					</Typography>
-					<Typography variant="body1" paragraph={true}>
-						{v.description.split("\n").map((s) => (
-							<div>
-								{s}
-								<br />
+			<Grid item key={"plist " + i}>
+				<Card elevation={5}>
+					<CardMedia className={classes.media} style={{ backgroundColor: v.backgroundColor }} image={"Ressources/Images/" + v.image} title="project" />
+					<CardContent>
+						<Typography style={{ textTransform: "capitalize", marginBottom: "20px" }} variant="subtitle1">
+							{v.title}
+						</Typography>
+
+						{v.description.split("\n").map((s, j) => (
+							<div key={"plist " + i + ", desp " + j}>
+								<Typography variant="body1" paragraph={true}>
+									{s}
+								</Typography>
 							</div>
 						))}
-					</Typography>
-					{v.downloadable ? (
-						<Button variant="outlined" color="secondary" startIcon={<WinIcon />} href={v.link} download>
-							Download
-						</Button>
-					) : (
-						<Button variant="outlined" color="secondary" target="_blank" rel="noopener noreferrer" href={v.link} >
-							Play
-						</Button>
-					)}
-				</CardContent>
-			</Card>
-		</Grid>
-	)});
+						{v.downloadable ? (
+							<Button variant="outlined" color="secondary" startIcon={<WinIcon />} href={v.link} download>
+								Download
+							</Button>
+						) : (
+							<Button variant="outlined" color="secondary" target="_blank" rel="noopener noreferrer" href={v.link}>
+								Play
+							</Button>
+						)}
+					</CardContent>
+				</Card>
+			</Grid>
+		);
+	});
 }
 
 function List(props) {
 	const classes = useStyles();
-	return props.list.map((v) => (
-		<Grid item>
+	return props.list.map((v, i) => (
+		<Grid item key={"glist " + i}>
 			<Card className={classes.card} elevation={5}>
 				<Grid>
 					<CardContent>
@@ -205,7 +204,7 @@ function Projects(props) {
 					</Grid>
 				</Grid>
 				<Grid item container direction="row" spacing={3} xs={12} md={8}>
-					<Typography variant="h5" style={{marginTop: "30px"}} gutterBottom>
+					<Typography variant="h5" style={{ marginTop: "30px" }} gutterBottom>
 						Here are some other projects I've done in my free time, hosted on my Github
 					</Typography>
 				</Grid>

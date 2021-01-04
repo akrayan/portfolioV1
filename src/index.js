@@ -37,7 +37,7 @@ const theme = createMuiTheme({
 		//padding: "50px",
 	},
 });
-
+/*
 const theme1 = createMuiTheme({
 	palette: {
 		primary: { main : "#3282b8ff"}, //emerald
@@ -58,7 +58,7 @@ const theme1 = createMuiTheme({
 		//backgroundColor: "var(--gunmetal)",
 		//padding: "50px",
 	},
-});
+});*/
 
 ReactDOM.render(
 	<React.StrictMode>

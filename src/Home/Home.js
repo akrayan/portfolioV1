@@ -1,17 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import { makeStyles, Grid, Tabs, Tab, Box, Typography, Paper, Divider } from "@material-ui/core";
+import { makeStyles, Grid} from "@material-ui/core";
 import "./Home.css";
-import data from "../Ressources/data.json";
 import Experience from "../sections/Experience";
 import About from "../sections/About";
 import TopPage from "../sections/TopPage";
 import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
 import NavBar from "../NavBar";
-import FadeComponent from "../components/FadeComponent";
 import "../scss/palette-turq.scss";
 
 const useStyles = makeStyles((theme) => ({
